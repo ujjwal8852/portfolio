@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+body
+{
+    margin: 0%;
+    background-color: #000000;
+}
+/* container */
+.darkness
+{
+    width: 100%;
+    background-color: #000000;  
+}
+/* main-path */
+.darkness .pathway
+{
+    margin: auto;
+    width: 70%;
+    /* background-color: #080b0b; */
+    background-color: rgb(7, 10, 12);  
+}
+/* floor-light */
+.darkness .pathway .floor-tiles .floor-light
+{
+    width: 100%;
+    /* height: 500px; */
+    padding: 0px 10px;
+    /* background-color: rgb(23, 23, 23);      */
+}
+/* tile */
+.darkness .pathway .floor-tiles .floor-light .tile
+{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(12, 12, 19);
+    border: 8px solid #07070b;
+    text-align: center;
+    padding-top: 460px;
+    padding-bottom: 140px;
+}
+/* circle-light */
+.darkness .pathway .floor-tiles .floor-light .tile .circle-light
+{
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 10%;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    /* background-color: rgb(8, 11, 13); */
+    /* border: 3px solid #ff0000; */
+        
+}
+/* circle-tile */
+.darkness .pathway .floor-tiles .floor-light .tile .circle-light .circle-tile
+{
+    position: absolute;
+    left: calc(50% - 105px);
+    top: calc(50% - 105px);
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 19);
+    border: 1px solid #000000;  
+}
+/* title */
+.darkness .pathway .floor-tiles .floor-light .tile .title
+{
+    font-family: 'Play','warzone','metalord';
+    font-size: 22px;
+    font-weight: bold;
+    /* color: rgb(5, 8, 9); */
+    padding: 0px 20px 120px 20px;
+    line-height: 40px;
+}
+/* text */
+.darkness .pathway .floor-tiles .floor-light .tile .text 
+{
+    font-family: 'Play','warzone','metalord';
+    font-size: 22px;
+    /* color: rgb(5, 8, 9); */
+    padding: 0px 20px 20px 20px;
+    
+}
+/* tale */
+.darkness .pathway .floor-tiles .floor-light .tile .tale 
+{
+    font-family: 'warzone','android','metalord';
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    /* color: rgb(5, 8, 9); */
+
+    padding: 40px 20px 0px 20px;
+}
+/* floor-tile1 */
+.darkness .pathway .floor-tile1 .floor-light .tile
+{
+    top: 10px;
+    height: 900px;
+}
+/* floor-tile11
+.darkness .pathway .floor-tile11 .floor-light .tile .tale
+{
+    color: rgb(255, 0, 0);
+} */
+/* floor-tile33 */
+.darkness .pathway .floor-tile33 .floor-light .tile
+{
+    bottom: 10px;
+}
+/* --------------transition------------------ */
+/* floor-lights-activated */
+.floor-lights-activated
+{
+    background-color: rgb(255, 255, 255);
+    transition-property: background-color;
+    transition-duration: 1000ms;
+    transition-delay: 200ms;
+    transition-timing-function: ease-in-out; 
+}
+/* circle-lights-activated */
+.circle-lights-activated
+{
+    background-color: rgb(255, 0, 251);
+    transition-property: background-color;
+    transition-duration: 1200ms;
+    transition-timing-function: ease-in-out;     
+}
+/* titles-activated */
+.titles-activated
+{
+    color: rgb(255, 255, 0);
+    transition-property: color;
+    transition-duration: 1200ms;
+    /* transition-delay: 300ms; */
+    transition-timing-function: ease-in-out;  
+}
+/* texts-activated */
+.texts-activated
+{
+    color: rgb(0, 234, 255);
+    transition-property: color;
+    transition-duration: 1200ms;
+    /* transition-delay: 300ms; */
+    transition-timing-function: ease-in-out;  
+}
+/* tales-activated */
+.tales-activated
+{
+    color: rgb(255, 0, 0);
+    transition-property: color;
+    transition-duration: 1200ms;
+    /* transition-delay: 300ms; */
+    transition-timing-function: ease-in-out; 
+}
